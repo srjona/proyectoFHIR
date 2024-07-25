@@ -1,0 +1,156 @@
+[
+  {
+    "id" : "AnimalRace",
+    "type" : "CodeSystem",
+    "url" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+    "version" : "0.1",
+    "name" : "AnimalRace"
+  },
+  {
+    "id" : "AnimalSpecie",
+    "type" : "CodeSystem",
+    "url" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs",
+    "version" : "0.1",
+    "name" : "AnimalSpecie"
+  },
+  {
+    "id" : "VetOrganizationCs",
+    "type" : "CodeSystem",
+    "url" : "http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs",
+    "version" : "0.1",
+    "name" : "VetOrganizationCs"
+  },
+  {
+    "id" : "AnimalGenderStatus",
+    "type" : "StructureDefinition",
+    "url" : "http://team-a-hl7.org/fhir/StructureDefinition/AniamalGenderStatus",
+    "version" : "0.1",
+    "name" : "AnimalGenderStatus"
+  },
+  {
+    "id" : "AnimalRace",
+    "type" : "StructureDefinition",
+    "url" : "http://team-a-hl7.org/fhir/StructureDefinition/AnimalRace",
+    "version" : "0.1",
+    "name" : "AnimalRace"
+  },
+  {
+    "id" : "AnimalSpecie",
+    "type" : "StructureDefinition",
+    "url" : "http://team-a-hl7.org/fhir/StructureDefinition/AnimalSpecie",
+    "version" : "0.1",
+    "name" : "AnimalSpecie"
+  },
+  {
+    "id" : "AnimalGenderStatus",
+    "type" : "ValueSet",
+    "url" : "http://team-a-hl7.org/fhir/ValueSet/AnimalGenderStatus",
+    "version" : "0.1",
+    "name" : "AnimalGenderStatus"
+  },
+  {
+    "id" : "AnimalRace",
+    "type" : "ValueSet",
+    "url" : "http://team-a-hl7.org/fhir/ValueSet/AnimalRaceList",
+    "version" : "0.1",
+    "name" : "AnimalRace"
+  },
+  {
+    "id" : "AnimalSpecie",
+    "type" : "ValueSet",
+    "url" : "http://team-a-hl7.org/fhir/ValueSet/AnimalSpecieList",
+    "version" : "0.1",
+    "name" : "AnimalSpecie"
+  },
+  {
+    "id" : "PetPatientContactRole",
+    "type" : "ValueSet",
+    "url" : "http://team-a-hl7.org/fhir/ValueSet/PetPatientContactRoleList",
+    "version" : "0.1",
+    "name" : "PetPatientContactRole"
+  },
+  {
+    "id" : "VetOrganizationValueSet",
+    "type" : "ValueSet",
+    "url" : "http://team-a-hl7.org/fhir/ValueSet/VetOrganizationList",
+    "version" : "0.1",
+    "name" : "VetOrganizationValueSet"
+  },
+  {
+    "id" : "fhir.profiling.example",
+    "type" : "ImplementationGuide",
+    "url" : "https://example.org/fhir/ImplementationGuide/fhir.profiling.example",
+    "version" : "0.1",
+    "name" : "ExampleProfilingIG"
+  },
+  {
+    "id" : "PetOrigin",
+    "type" : "StructureDefinition",
+    "url" : "https://team-a-hl7.org/fhir/StructureDefinition/PetOrigin",
+    "version" : "0.1",
+    "name" : "PetOrigin"
+  },
+  {
+    "id" : "PetOwnerRelatedPerson",
+    "type" : "StructureDefinition",
+    "url" : "https://team-a-hl7.org/fhir/StructureDefinition/PetOwnerRelatedPersonProfile",
+    "version" : "0.1",
+    "name" : "PetOwnerRelatedPerson"
+  },
+  {
+    "id" : "PetParticularSigns",
+    "type" : "StructureDefinition",
+    "url" : "https://team-a-hl7.org/fhir/StructureDefinition/PetParticularSigns",
+    "version" : "0.1",
+    "name" : "PetParticularSigns"
+  },
+  {
+    "id" : "PetPatient",
+    "type" : "StructureDefinition",
+    "url" : "https://team-a-hl7.org/fhir/StructureDefinition/PetPatient",
+    "version" : "0.1",
+    "name" : "PetPatient"
+  },
+  {
+    "id" : "PetTypeCoat",
+    "type" : "StructureDefinition",
+    "url" : "https://team-a-hl7.org/fhir/StructureDefinition/PetTypeCoat",
+    "version" : "0.1",
+    "name" : "PetTypeCoat"
+  },
+  {
+    "id" : "PetWeight",
+    "type" : "StructureDefinition",
+    "url" : "https://team-a-hl7.org/fhir/StructureDefinition/PetWeight",
+    "version" : "0.1",
+    "name" : "PetWeight"
+  },
+  {
+    "id" : "PetZootechnicalPurpose",
+    "type" : "StructureDefinition",
+    "url" : "https://team-a-hl7.org/fhir/StructureDefinition/PetZootechnicalPurpose",
+    "version" : "0.1",
+    "name" : "PetZootechnicalPurpose"
+  },
+  {
+    "id" : "VetComposition",
+    "type" : "StructureDefinition",
+    "url" : "https://team-a-hl7.org/fhir/StructureDefinition/VetComposition",
+    "version" : "0.1",
+    "name" : "VetComposition"
+  },
+  {
+    "id" : "VetOrganization",
+    "type" : "StructureDefinition",
+    "url" : "https://team-a-hl7.org/fhir/StructureDefinition/VetOrganization",
+    "version" : "0.1",
+    "name" : "VetOrganization"
+  },
+  {
+    "id" : "VetPractitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://team-a-hl7.org/fhir/StructureDefinition/VetPractitioner",
+    "version" : "0.1",
+    "name" : "VetPractitioner"
+  }
+]

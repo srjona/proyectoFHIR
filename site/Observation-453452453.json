@@ -1,0 +1,40 @@
+{
+  "resourceType" : "Observation",
+  "id" : "453452453",
+  "meta" : {
+    "profile" : ["https://team-a-hl7.org/fhir/StructureDefinition/PetWeight"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation 453452453</b></p><a name=\"453452453\"> </a><a name=\"hc453452453\"> </a><a name=\"hc453452453-en-US\"> </a><p><b>identifier</b>: <code>http://www.bmc.nl/zorgportal/identifiers/observations</code>/6323\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 10210-3}\">Physical findings of General status Narrative</span></p><p><b>subject</b>: <a href=\"PetPatient/64765015-97b9-4391-bab2-c6b821527adc\">PetPatient/64765015-97b9-4391-bab2-c6b821527adc</a></p><p><b>effective</b>: 2013-04-02 09:30:10+0100 --&gt; (ongoing)</p><p><b>issued</b>: 2013-04-03 15:30:10+0100</p><p><b>performer</b>: <a href=\"VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52\">VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52</a></p><p><b>value</b>: 15 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://www.bmc.nl/zorgportal/identifiers/observations",
+    "value" : "6323"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "10210-3",
+      "display" : "Physical findings of General status Narrative"
+    }]
+  },
+  "subject" : {
+    "reference" : "PetPatient/64765015-97b9-4391-bab2-c6b821527adc"
+  },
+  "effectivePeriod" : {
+    "start" : "2013-04-02T09:30:10+01:00"
+  },
+  "issued" : "2013-04-03T15:30:10+01:00",
+  "performer" : [{
+    "reference" : "VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52"
+  }],
+  "valueQuantity" : {
+    "value" : 15,
+    "unit" : "kg",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "kg"
+  }
+}

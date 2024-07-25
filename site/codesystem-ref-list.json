@@ -1,0 +1,65 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/animal-genderstatus",
+      "version" : "5.1.0",
+      "status" : "active",
+      "name" : "GenderStatus",
+      "title" : "gender status code system",
+      "description" : "This example value set defines a set of codes that can be used to indicate the current state of the animal's reproductive organs.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.230",
+        "2.16.840.1.113883.4.642.4.419",
+        "2.16.840.1.113883.4.642.1.408"
+      ],
+      "uses" : {
+      },
+      "ValueSet-AnimalGenderStatus.html" : "Animal GenderStatus Value Set"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-PetPatientContactRole.html" : "Pet Patient Contact Role Value Set"
+    },
+    {
+      "url" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+      "version" : "0.1",
+      "status" : "active",
+      "name" : "AnimalRace",
+      "title" : "AnimalRace",
+      "description" : "Codes of the different Animal Races",
+      "uses" : {
+      },
+      "ValueSet-AnimalRace.html" : "Animal Race Value Set"
+    },
+    {
+      "url" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs",
+      "version" : "0.1",
+      "status" : "active",
+      "name" : "AnimalSpecie",
+      "title" : "AnimalSpecie",
+      "description" : "Codes of the different Animal Species",
+      "uses" : {
+      },
+      "ValueSet-AnimalSpecie.html" : "Animal Specie Value Set"
+    },
+    {
+      "url" : "http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs",
+      "version" : "0.1",
+      "status" : "active",
+      "name" : "VetOrganizationCs",
+      "title" : "VetOrganizationCs",
+      "description" : "Codes of the Organanization types including Veterinarian",
+      "uses" : {
+      },
+      "ValueSet-VetOrganizationValueSet.html" : "Vet Organization Value Set"
+    }
+  ]
+}

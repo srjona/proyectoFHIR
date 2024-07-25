@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VetOrganizationValueSet",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VetOrganizationValueSet</b></p><a name=\"VetOrganizationValueSet\"> </a><a name=\"hcVetOrganizationValueSet\"> </a><a name=\"hcVetOrganizationValueSet-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-VetOrganizationCs.html\"><code>http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs</code></a></li></ul></div>"
+  },
+  "url" : "http://team-a-hl7.org/fhir/ValueSet/VetOrganizationList",
+  "version" : "0.1",
+  "name" : "VetOrganizationValueSet",
+  "title" : "Vet Organization Value Set",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-07-24T22:33:22-05:00",
+  "publisher" : "HL7 Colombia - Official Affiliate of Health Level Seven International",
+  "contact" : [{
+    "name" : "HL7 Colombia - Official Affiliate of Health Level Seven International",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7co.org"
+    },
+    {
+      "system" : "email",
+      "value" : "nombre@example.com"
+    }]
+  },
+  {
+    "name" : "Carolina Rodriguez",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "carolina.rodriguez@example.org",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Juan Pérez",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "juan.perez@example.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes of the Organanization types including Veterinarian",
+  "jurisdiction" : [{
+    "coding" : [{
+      "display" : "Colombia"
+    }]
+  }],
+  "purpose" : "This FHIR resource type CodeSystem has been created for educational purposes.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs"
+    }]
+  }
+}

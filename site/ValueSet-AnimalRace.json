@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "AnimalRace",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AnimalRace</b></p><a name=\"AnimalRace\"> </a><a name=\"hcAnimalRace\"> </a><a name=\"hcAnimalRace-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-AnimalRace.html\"><code>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</code></a></li></ul></div>"
+  },
+  "url" : "http://team-a-hl7.org/fhir/ValueSet/AnimalRaceList",
+  "version" : "0.1",
+  "name" : "AnimalRace",
+  "title" : "Animal Race Value Set",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-07-24T22:33:22-05:00",
+  "publisher" : "HL7 Colombia - Official Affiliate of Health Level Seven International",
+  "contact" : [{
+    "name" : "HL7 Colombia - Official Affiliate of Health Level Seven International",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7co.org"
+    },
+    {
+      "system" : "email",
+      "value" : "nombre@example.com"
+    }]
+  },
+  {
+    "name" : "Carolina Rodriguez",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "carolina.rodriguez@example.org",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Juan Pérez",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "juan.perez@example.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes of the Animal Race types",
+  "jurisdiction" : [{
+    "coding" : [{
+      "display" : "Colombia"
+    }]
+  }],
+  "purpose" : "This FHIR resource type CodeSystem has been created for educational purposes.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs"
+    }]
+  }
+}

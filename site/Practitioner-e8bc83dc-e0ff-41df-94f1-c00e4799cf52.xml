@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="e8bc83dc-e0ff-41df-94f1-c00e4799cf52"/>
+  <meta>
+    <profile value="https://team-a-hl7.org/fhir/StructureDefinition/VetPractitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner e8bc83dc-e0ff-41df-94f1-c00e4799cf52</b></p><a name="e8bc83dc-e0ff-41df-94f1-c00e4799cf52"> </a><a name="hce8bc83dc-e0ff-41df-94f1-c00e4799cf52"> </a><a name="hce8bc83dc-e0ff-41df-94f1-c00e4799cf52-en-US"> </a><p><b>identifier</b>: Person Number/923468712364 (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Diego Espinoza Silva(Official)</p><p><b>telecom</b>: <a href="tel:+57(600)919-2200">+57(600)919-2200</a>, <a href="tel:+57(300)191-0022">+57(300)191-0022</a></p><p><b>address</b>: Avenida Siempre Viva 123(home)</p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1974-03-11</p><blockquote><p><b>qualification</b></p><blockquote><p><b>id</b></p>VetProffesional</blockquote><p><b>identifier</b>: License number/TP-7649328645 (use: official, )</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 106290006}">Veterinario</span></p><p><b>period</b>: 2000-09-12 --&gt; (ongoing)</p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PN"/>
+        <display value="Person Number"/>
+      </coding>
+    </type>
+    <value value="923468712364"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <text value="Diego Espinoza Silva"/>
+    <family value="Espinoza Silva"/>
+    <given value="Diego"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+57(600)919-2200"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="+57(300)191-0022"/>
+    <use value="mobile"/>
+  </telecom>
+  <address>
+    <use value="home"/>
+    <text value="Avenida Siempre Viva 123"/>
+    <city value="Medellín"/>
+    <state value="Antioquia"/>
+    <postalCode value="64545"/>
+    <country value="Colombia"/>
+  </address>
+  <gender value="male"/>
+  <birthDate value="1974-03-11"/>
+  <qualification id="VetProffesional">
+    <identifier>
+      <use value="official"/>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+          <code value="LN"/>
+          <display value="License number"/>
+        </coding>
+      </type>
+      <value value="TP-7649328645"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="106290006"/>
+        <display value="Veterinarian (occupation)"/>
+      </coding>
+      <text value="Veterinario"/>
+    </code>
+    <period>
+      <start value="2000-09-12"/>
+    </period>
+  </qualification>
+</Practitioner>

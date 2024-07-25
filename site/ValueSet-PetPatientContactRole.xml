@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PetPatientContactRole"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PetPatientContactRole</b></p><a name="PetPatientContactRole"> </a><a name="hcPetPatientContactRole"> </a><a name="hcPetPatientContactRole-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/224150009">224150009</a></td><td>Pet ownership (observable entity)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://team-a-hl7.org/fhir/ValueSet/PetPatientContactRoleList"/>
+  <version value="0.1"/>
+  <name value="PetPatientContactRole"/>
+  <title value="Pet Patient Contact Role Value Set"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-07-24T22:33:22-05:00"/>
+  <publisher value="HL7 Colombia - Official Affiliate of Health Level Seven International"/>
+  <contact>
+    <name value="HL7 Colombia - Official Affiliate of Health Level Seven International"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7co.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="nombre@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Carolina Rodriguez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="carolina.rodriguez@example.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Juan Pérez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="juan.perez@example.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes of the Pet Patient Contact Role List"/>
+  <jurisdiction>
+    <coding>
+      <display value="Colombia"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="This FHIR resource type CodeSystem has been created for educational purposes."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="224150009"/>
+        <display value="Pet ownership (observable entity)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

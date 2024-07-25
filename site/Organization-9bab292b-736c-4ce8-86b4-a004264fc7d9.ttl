@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/fhir/Organization/9bab292b-736c-4ce8-86b4-a004264fc7d9> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "9bab292b-736c-4ce8-86b4-a004264fc7d9"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://team-a-hl7.org/fhir/StructureDefinition/VetOrganization"^^xsd:anyURI ;
+       fhir:link <https://team-a-hl7.org/fhir/StructureDefinition/VetOrganization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization 9bab292b-736c-4ce8-86b4-a004264fc7d9</b></p><a name=\"9bab292b-736c-4ce8-86b4-a004264fc7d9\"> </a><a name=\"hc9bab292b-736c-4ce8-86b4-a004264fc7d9\"> </a><a name=\"hc9bab292b-736c-4ce8-86b4-a004264fc7d9-en-US\"> </a><p><b>identifier</b>: Tax ID number/960000000-0 (use: official, )</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs VET}\">Veterinarian Healtcare Provider</span></p><p><b>name</b>: MI CONSULTORIO VETRINARIO</p><p><b>telecom</b>: <a href=\"tel:+57(600)919-2200\">+57(600)919-2200</a></p><p><b>address</b>: Kra 7 No. 39-60(work)</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TAX" ] ;
+         fhir:display [ fhir:v "Tax ID number" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "960000000-0" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "VET" ] ;
+       fhir:display [ fhir:v "Veterinarian Healtcare Provider" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "MI CONSULTORIO VETRINARIO"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+57(600)919-2200" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "work" ] ;
+     fhir:text [ fhir:v "Kra 7 No. 39-60" ] ;
+     fhir:city [ fhir:v "Bogotá D.C." ] ;
+     fhir:district [ fhir:v "Chapinero" ] ;
+     fhir:state [ fhir:v "Bogotá D.C." ] ;
+     fhir:postalCode [ fhir:v "110000" ] ;
+     fhir:country [ fhir:v "CO" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

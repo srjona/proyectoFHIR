@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://hl7.org/fhir/animal-genderstatus,5.1.0,active,"2.16.840.1.113883.4.642.2.230,2.16.840.1.113883.4.642.4.419,2.16.840.1.113883.4.642.1.408",GenderStatus,gender status code system,"This example value set defines a set of codes that can be used to indicate the current state of the animal's reproductive organs.","ValueSet/AnimalGenderStatus"
+http://snomed.info/sct,null,active,"2.16.840.1.113883.6.96",SNOMED_CT,SNOMED CT (all versions),"SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).","ValueSet/PetPatientContactRole"
+http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs,0.1,active,,AnimalRace,AnimalRace,"Codes of the different Animal Races","ValueSet/AnimalRace"
+http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs,0.1,active,,AnimalSpecie,AnimalSpecie,"Codes of the different Animal Species","ValueSet/AnimalSpecie"
+http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs,0.1,active,,VetOrganizationCs,VetOrganizationCs,"Codes of the Organanization types including Veterinarian","ValueSet/VetOrganizationValueSet"

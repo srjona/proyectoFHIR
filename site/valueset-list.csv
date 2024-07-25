@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://team-a-hl7.org/fhir/ValueSet/AnimalGenderStatus,0.1,active,,AnimalGenderStatus,Animal GenderStatus Value Set,"Codes of the Animal Gender Status",,"hl7.fhir.uv.extensions.r4"
+http://team-a-hl7.org/fhir/ValueSet/AnimalRaceList,0.1,active,,AnimalRace,Animal Race Value Set,"Codes of the Animal Race types",,"Internal"
+http://team-a-hl7.org/fhir/ValueSet/AnimalSpecieList,0.1,active,,AnimalSpecie,Animal Specie Value Set,"Codes of the Animal Specie types",,"Internal"
+http://team-a-hl7.org/fhir/ValueSet/PetPatientContactRoleList,0.1,active,,PetPatientContactRole,Pet Patient Contact Role Value Set,"Codes of the Pet Patient Contact Role List",,"SCT"
+http://team-a-hl7.org/fhir/ValueSet/VetOrganizationList,0.1,active,,VetOrganizationValueSet,Vet Organization Value Set,"Codes of the Organanization types including Veterinarian",,"Internal"

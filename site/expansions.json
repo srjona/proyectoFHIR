@@ -1,0 +1,336 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "f118cb99-c22b-49c6-8475-9669017bcda2",
+  "meta" : {
+    "lastUpdated" : "2024-07-24T22:33:22.326-05:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://team-a-hl7.org/fhir/ValueSet/AnimalGenderStatus",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-animal-genderstatus.html\">codesystem gender status code system v5.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-http---hl7.org-fhir-animal-genderstatus-neutered\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-animal-genderstatus.html#animal-genderstatus-neutered\">neutered</a></td><td>http://hl7.org/fhir/animal-genderstatus</td><td>Neutered</td><td><div><p>The animal has been sterilized, castrated or otherwise made infertile.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-http---hl7.org-fhir-animal-genderstatus-intact\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-animal-genderstatus.html#animal-genderstatus-intact\">intact</a></td><td>http://hl7.org/fhir/animal-genderstatus</td><td>Intact</td><td><div><p>The animal's reproductive organs are intact.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-http---hl7.org-fhir-animal-genderstatus-unknown\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-animal-genderstatus.html#animal-genderstatus-unknown\">unknown</a></td><td>http://hl7.org/fhir/animal-genderstatus</td><td>Unknown</td><td><div><p>Unable to determine whether the animal has been neutered.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://team-a-hl7.org/fhir/ValueSet/AnimalGenderStatus",
+      "version" : "0.1",
+      "name" : "AnimalGenderStatus",
+      "title" : "Animal GenderStatus Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2024-07-24T22:33:22-05:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "display" : "Colombia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:81a361de-161a-479e-959e-8760b7cee327",
+        "timestamp" : "2024-07-24T22:33:44-05:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/animal-genderstatus|5.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/animal-genderstatus",
+          "code" : "neutered",
+          "display" : "Neutered"
+        },
+        {
+          "system" : "http://hl7.org/fhir/animal-genderstatus",
+          "code" : "intact",
+          "display" : "Intact"
+        },
+        {
+          "system" : "http://hl7.org/fhir/animal-genderstatus",
+          "code" : "unknown",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://team-a-hl7.org/fhir/ValueSet/AnimalRaceList",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-AnimalRace.html\">codesystem AnimalRace v0.1 (CodeSystem)</a></p><p>This value set contains 12 concepts</p><table class=\"codes\"><tr><td><b>Level</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-BIRD\"> </a>1</td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-BIRD\">BIRD</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>Pajaro</td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-CANARY\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-CANARY\">CANARY</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>Canario</td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-COCKATOO\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-COCKATOO\">COCKATOO</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>Cacatua</td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-CROWN\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-CROWN\">CROWN</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>Cuervo</td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-FELINE\"> </a>1</td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-FELINE\">FELINE</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>Felino</td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-ANGORA\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-ANGORA\">ANGORA</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>Angora</td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-PERSIAN\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-PERSIAN\">PERSIAN</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>Persa</td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-SIBERIAN\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-SIBERIAN\">SIBERIAN</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>Siberiano</td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-CANINE\"> </a>1</td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-CANINE\">CANINE</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>Canino</td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-PUG\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-PUG\">PUG</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>Pug</td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-GERMANSHEPARD\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-GERMANSHEPARD\">GERMANSHEPARD</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>Pastor Alemán</td></tr><tr><td><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalRaceCs-PUDDLE\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-AnimalRace.html#AnimalRace-PUDDLE\">PUDDLE</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</td><td>French Puddle</td></tr></table></div>"
+      },
+      "url" : "http://team-a-hl7.org/fhir/ValueSet/AnimalRaceList",
+      "version" : "0.1",
+      "name" : "AnimalRace",
+      "title" : "Animal Race Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2024-07-24T22:33:22-05:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "display" : "Colombia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:0d3b9651-adee-4f94-a9c6-28b240b40153",
+        "timestamp" : "2024-07-24T22:33:44-05:00",
+        "total" : 12,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs|0.1"
+        }],
+        "contains" : [{
+          "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+          "code" : "BIRD",
+          "display" : "Pajaro",
+          "contains" : [{
+            "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+            "code" : "CANARY",
+            "display" : "Canario"
+          },
+          {
+            "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+            "code" : "COCKATOO",
+            "display" : "Cacatua"
+          },
+          {
+            "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+            "code" : "CROWN",
+            "display" : "Cuervo"
+          }]
+        },
+        {
+          "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+          "code" : "FELINE",
+          "display" : "Felino",
+          "contains" : [{
+            "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+            "code" : "ANGORA",
+            "display" : "Angora"
+          },
+          {
+            "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+            "code" : "PERSIAN",
+            "display" : "Persa"
+          },
+          {
+            "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+            "code" : "SIBERIAN",
+            "display" : "Siberiano"
+          }]
+        },
+        {
+          "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+          "code" : "CANINE",
+          "display" : "Canino",
+          "contains" : [{
+            "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+            "code" : "PUG",
+            "display" : "Pug"
+          },
+          {
+            "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+            "code" : "GERMANSHEPARD",
+            "display" : "Pastor Alemán"
+          },
+          {
+            "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs",
+            "code" : "PUDDLE",
+            "display" : "French Puddle"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://team-a-hl7.org/fhir/ValueSet/AnimalSpecieList",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-AnimalSpecie.html\">codesystem AnimalSpecie v0.1 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalSpecieCs-BIRD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AnimalSpecie.html#AnimalSpecie-BIRD\">BIRD</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs</td><td>Pajaro</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalSpecieCs-FELINE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AnimalSpecie.html#AnimalSpecie-FELINE\">FELINE</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs</td><td>Felino</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-AnimalSpecieCs-CANINE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-AnimalSpecie.html#AnimalSpecie-CANINE\">CANINE</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs</td><td>Canino</td></tr></table></div>"
+      },
+      "url" : "http://team-a-hl7.org/fhir/ValueSet/AnimalSpecieList",
+      "version" : "0.1",
+      "name" : "AnimalSpecie",
+      "title" : "Animal Specie Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2024-07-24T22:33:22-05:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "display" : "Colombia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:901ca9dd-a209-4dbc-81ac-145836c5115e",
+        "timestamp" : "2024-07-24T22:33:44-05:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs|0.1"
+        }],
+        "contains" : [{
+          "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs",
+          "code" : "BIRD",
+          "display" : "Pajaro"
+        },
+        {
+          "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs",
+          "code" : "FELINE",
+          "display" : "Felino"
+        },
+        {
+          "system" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs",
+          "code" : "CANINE",
+          "display" : "Canino"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://team-a-hl7.org/fhir/ValueSet/PetPatientContactRoleList",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-feb. 2024</p><p>This value set contains 1 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-http---snomed.info-sct-224150009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/224150009\">224150009</a></td><td>http://snomed.info/sct</td><td>Pet ownership</td></tr></table></div>"
+      },
+      "url" : "http://team-a-hl7.org/fhir/ValueSet/PetPatientContactRoleList",
+      "version" : "0.1",
+      "name" : "PetPatientContactRole",
+      "title" : "Pet Patient Contact Role Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2024-07-24T22:33:22-05:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "display" : "Colombia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:b9d6338c-5dc1-41be-bccb-eef90a11545f",
+        "timestamp" : "2024-07-24T22:33:44-05:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "224150009",
+          "display" : "Pet ownership"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://team-a-hl7.org/fhir/ValueSet/VetOrganizationList",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-VetOrganizationCs.html\">codesystem VetOrganizationCs v0.1 (CodeSystem)</a></p><p>This value set contains 1 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-http---team-a-hl7.org-fhir-CodeSystem-VetOrganizationCs-VET\"> </a>\u00a0\u00a0<a href=\"CodeSystem-VetOrganizationCs.html#VetOrganizationCs-VET\">VET</a></td><td>http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs</td><td>Veterinarian Healtcare Provider</td><td><div><p>An organization that provides healthcare services from pets.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://team-a-hl7.org/fhir/ValueSet/VetOrganizationList",
+      "version" : "0.1",
+      "name" : "VetOrganizationValueSet",
+      "title" : "Vet Organization Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2024-07-24T22:33:22-05:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "display" : "Colombia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:8549d4fb-4a51-4ea1-8c51-a03346bd6b74",
+        "timestamp" : "2024-07-24T22:33:44-05:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs|0.1"
+        }],
+        "contains" : [{
+          "system" : "http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs",
+          "code" : "VET",
+          "display" : "Veterinarian Healtcare Provider"
+        }]
+      }
+    }
+  }]
+}

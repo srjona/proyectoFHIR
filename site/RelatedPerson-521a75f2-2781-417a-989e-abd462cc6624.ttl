@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/fhir/RelatedPerson/521a75f2-2781-417a-989e-abd462cc6624> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "521a75f2-2781-417a-989e-abd462cc6624"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://team-a-hl7.org/fhir/StructureDefinition/PetOwnerRelatedPersonProfile"^^xsd:anyURI ;
+       fhir:link <https://team-a-hl7.org/fhir/StructureDefinition/PetOwnerRelatedPersonProfile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson 521a75f2-2781-417a-989e-abd462cc6624</b></p><a name=\"521a75f2-2781-417a-989e-abd462cc6624\"> </a><a name=\"hc521a75f2-2781-417a-989e-abd462cc6624\"> </a><a name=\"hc521a75f2-2781-417a-989e-abd462cc6624-en-US\"> </a><p><b>identifier</b>: Person Number/28374987 (use: official, )</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-64765015-97b9-4391-bab2-c6b821527adc.html\">Michi Female, DoB: 2017-03-21 ( Medical record number: EHR-349827304)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://snomed.info/sct 224150009}\">Pet ownership</span></p><p><b>name</b>: María Reyes López</p><p><b>telecom</b>: <a href=\"tel:+57(601)111-1111\">+57(601)111-1111</a>, <a href=\"tel:+57(300)222-2222\">+57(300)222-2222</a></p><p><b>address</b>: Cll 140 # 7B-75(home)</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PN" ] ;
+         fhir:display [ fhir:v "Person Number" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "28374987" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <https://example.org/fhir/Patient/64765015-97b9-4391-bab2-c6b821527adc> ;
+     fhir:reference [ fhir:v "Patient/64765015-97b9-4391-bab2-c6b821527adc" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       a sct:224150009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "224150009" ] ;
+       fhir:display [ fhir:v "Pet ownership" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "María Reyes López" ] ;
+     fhir:family [ fhir:v "Reyes López" ] ;
+     fhir:given ( [ fhir:v "María" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+57(601)111-1111" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+57(300)222-2222" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:text [ fhir:v "Cll 140 # 7B-75" ] ;
+     fhir:city [ fhir:v "Bogotá D.C" ] ;
+     fhir:state [ fhir:v "Bogotá D.C." ] ;
+     fhir:postalCode [ fhir:v "110121" ] ;
+     fhir:country [ fhir:v "CO" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

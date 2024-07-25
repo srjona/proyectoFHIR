@@ -1,0 +1,64 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "AnimalSpecie",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem AnimalSpecie</b></p><a name=\"AnimalSpecie\"> </a><a name=\"hcAnimalSpecie\"> </a><a name=\"hcAnimalSpecie-en-US\"> </a><p>This  code system <code>http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">BIRD<a name=\"AnimalSpecie-BIRD\"> </a></td><td>Pajaro</td></tr><tr><td style=\"white-space:nowrap\">FELINE<a name=\"AnimalSpecie-FELINE\"> </a></td><td>Felino</td></tr><tr><td style=\"white-space:nowrap\">CANINE<a name=\"AnimalSpecie-CANINE\"> </a></td><td>Canino</td></tr></table></div>"
+  },
+  "url" : "http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs",
+  "version" : "0.1",
+  "name" : "AnimalSpecie",
+  "title" : "AnimalSpecie",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-07-24T22:33:22-05:00",
+  "publisher" : "HL7 Colombia - Official Affiliate of Health Level Seven International",
+  "contact" : [{
+    "name" : "HL7 Colombia - Official Affiliate of Health Level Seven International",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7co.org"
+    },
+    {
+      "system" : "email",
+      "value" : "nombre@example.com"
+    }]
+  },
+  {
+    "name" : "Carolina Rodriguez",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "carolina.rodriguez@example.org",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Juan Pérez",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "juan.perez@example.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes of the different Animal Species",
+  "jurisdiction" : [{
+    "coding" : [{
+      "display" : "Colombia"
+    }]
+  }],
+  "purpose" : "This FHIR resource type CodeSystem has been created for educational purposes.",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "BIRD",
+    "display" : "Pajaro"
+  },
+  {
+    "code" : "FELINE",
+    "display" : "Felino"
+  },
+  {
+    "code" : "CANINE",
+    "display" : "Canino"
+  }]
+}

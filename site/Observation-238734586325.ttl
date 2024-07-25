@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/fhir/Observation/238734586325> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "238734586325"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://team-a-hl7.org/fhir/StructureDefinition/PetTypeCoat"^^xsd:anyURI ;
+       fhir:link <https://team-a-hl7.org/fhir/StructureDefinition/PetTypeCoat>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation 238734586325</b></p><a name=\"238734586325\"> </a><a name=\"hc238734586325\"> </a><a name=\"hc238734586325-en-US\"> </a><p><b>identifier</b>: <code>http://www.bmc.nl/zorgportal/identifiers/observations</code>/6323 (use: official, )</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 10210-3}\">Physical findings of General status Narrative</span></p><p><b>subject</b>: <a href=\"PetPatient/64765015-97b9-4391-bab2-c6b821527adc\">PetPatient/64765015-97b9-4391-bab2-c6b821527adc</a></p><p><b>effective</b>: 2013-04-02 09:30:10+0100 --&gt; (ongoing)</p><p><b>issued</b>: 2013-04-03 15:30:10+0100</p><p><b>performer</b>: <a href=\"VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52\">VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52</a></p><p><b>value</b>: <span title=\"Codes:{http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs FELINE}\">Felino</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://www.bmc.nl/zorgportal/identifiers/observations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "6323" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:10210-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10210-3" ] ;
+       fhir:display [ fhir:v "Physical findings of General status Narrative" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://example.org/fhir/PetPatient/64765015-97b9-4391-bab2-c6b821527adc> ;
+     fhir:reference [ fhir:v "PetPatient/64765015-97b9-4391-bab2-c6b821527adc" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2013-04-02T09:30:10+01:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:issued [ fhir:v "2013-04-03T15:30:10+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://example.org/fhir/VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52> ;
+     fhir:reference [ fhir:v "VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FELINE" ] ;
+       fhir:display [ fhir:v "Felino" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

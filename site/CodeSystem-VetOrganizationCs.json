@@ -1,0 +1,57 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "VetOrganizationCs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem VetOrganizationCs</b></p><a name=\"VetOrganizationCs\"> </a><a name=\"hcVetOrganizationCs\"> </a><a name=\"hcVetOrganizationCs-en-US\"> </a><p>This  code system <code>http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">VET<a name=\"VetOrganizationCs-VET\"> </a></td><td>Veterinarian Healtcare Provider</td><td>An organization that provides healthcare services from pets.</td></tr></table></div>"
+  },
+  "url" : "http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs",
+  "version" : "0.1",
+  "name" : "VetOrganizationCs",
+  "title" : "VetOrganizationCs",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-07-24T22:33:22-05:00",
+  "publisher" : "HL7 Colombia - Official Affiliate of Health Level Seven International",
+  "contact" : [{
+    "name" : "HL7 Colombia - Official Affiliate of Health Level Seven International",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7co.org"
+    },
+    {
+      "system" : "email",
+      "value" : "nombre@example.com"
+    }]
+  },
+  {
+    "name" : "Carolina Rodriguez",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "carolina.rodriguez@example.org",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Juan Pérez",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "juan.perez@example.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes of the Organanization types including Veterinarian",
+  "jurisdiction" : [{
+    "coding" : [{
+      "display" : "Colombia"
+    }]
+  }],
+  "purpose" : "This FHIR resource type CodeSystem has been created for educational purposes.",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "VET",
+    "display" : "Veterinarian Healtcare Provider",
+    "definition" : "An organization that provides healthcare services from pets."
+  }]
+}

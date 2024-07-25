@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="521a75f2-2781-417a-989e-abd462cc6624"/>
+  <meta>
+    <profile value="https://team-a-hl7.org/fhir/StructureDefinition/PetOwnerRelatedPersonProfile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson 521a75f2-2781-417a-989e-abd462cc6624</b></p><a name="521a75f2-2781-417a-989e-abd462cc6624"> </a><a name="hc521a75f2-2781-417a-989e-abd462cc6624"> </a><a name="hc521a75f2-2781-417a-989e-abd462cc6624-en-US"> </a><p><b>identifier</b>: Person Number/28374987 (use: official, )</p><p><b>active</b>: true</p><p><b>patient</b>: <a href="Patient-64765015-97b9-4391-bab2-c6b821527adc.html">Michi Female, DoB: 2017-03-21 ( Medical record number: EHR-349827304)</a></p><p><b>relationship</b>: <span title="Codes:{http://snomed.info/sct 224150009}">Pet ownership</span></p><p><b>name</b>: María Reyes López</p><p><b>telecom</b>: <a href="tel:+57(601)111-1111">+57(601)111-1111</a>, <a href="tel:+57(300)222-2222">+57(300)222-2222</a></p><p><b>address</b>: Cll 140 # 7B-75(home)</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PN"/>
+        <display value="Person Number"/>
+      </coding>
+    </type>
+    <value value="28374987"/>
+  </identifier>
+  <active value="true"/>
+  <patient>
+    <reference value="Patient/64765015-97b9-4391-bab2-c6b821527adc"/>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="224150009"/>
+      <display value="Pet ownership"/>
+    </coding>
+  </relationship>
+  <name>
+    <text value="María Reyes López"/>
+    <family value="Reyes López"/>
+    <given value="María"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+57(601)111-1111"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="+57(300)222-2222"/>
+    <use value="home"/>
+  </telecom>
+  <address>
+    <use value="home"/>
+    <text value="Cll 140 # 7B-75"/>
+    <city value="Bogotá D.C"/>
+    <state value="Bogotá D.C."/>
+    <postalCode value="110121"/>
+    <country value="CO"/>
+  </address>
+</RelatedPerson>

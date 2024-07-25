@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="b23c8355-c570-4948-a025-3cef2c6ed2f7"/>
+  <meta>
+    <profile value="https://team-a-hl7.org/fhir/StructureDefinition/VetComposition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition b23c8355-c570-4948-a025-3cef2c6ed2f7</b></p><a name="b23c8355-c570-4948-a025-3cef2c6ed2f7"> </a><a name="hcb23c8355-c570-4948-a025-3cef2c6ed2f7"> </a><a name="hcb23c8355-c570-4948-a025-3cef2c6ed2f7-en-US"> </a><p><b>identifier</b>: <code>http://myvet.example.com/document-identifier</code>/4dad935c-a7bd</p><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 18842-5}">Discharge summary</span></p><p><b>category</b>: <span title="Codes:{http://loinc.org 11503-0}">Medical records</span></p><p><b>date</b>: 2023-03-28 09:23:45-0500</p><p><b>author</b>: <a href="VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52">VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52</a></p><p><b>title</b>: HISTORIA CLÍNICA VETERINARIA</p><p><b>custodian</b>: <a href="VetOrganization/9bab292b-736c-4ce8-86b4-a004264fc7d9">VetOrganization/9bab292b-736c-4ce8-86b4-a004264fc7d9</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://myvet.example.com/document-identifier"/>
+    <value value="4dad935c-a7bd"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18842-5"/>
+      <display value="Discharge summary"/>
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11503-0"/>
+      <display value="Medical records"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="PetPatient/64765015-97b9-4391-bab2-c6b821527adc"/>
+  </subject>
+  <date value="2023-03-28T09:23:45-05:00"/>
+  <author>
+    <reference value="VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52"/>
+  </author>
+  <title value="HISTORIA CLÍNICA VETERINARIA"/>
+  <custodian>
+    <reference value="VetOrganization/9bab292b-736c-4ce8-86b4-a004264fc7d9"/>
+  </custodian>
+  <section>
+    <title value="Anamnesis"/>
+    <entry>
+      <reference value="PetRelatedPerson/521a75f2-2781-417a-989e-abd462cc6624"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Examen físico general"/>
+    <entry>
+      <reference value="PetTypeCoat/238734586325"/>
+    </entry>
+    <entry>
+      <reference value="PetWeight/453452453"/>
+    </entry>
+    <entry>
+      <reference value="PetParticularSigns/R3453435"/>
+    </entry>
+    <entry>
+      <reference value="PetOrigin/FEGR45533"/>
+    </entry>
+    <entry>
+      <reference value="PetZootechnicalPurpose/2343324"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Abordaje diagnóstico"/>
+  </section>
+  <section>
+    <title value="Exámenes complementarios y resultados"/>
+  </section>
+  <section>
+    <title value="Diagnóstico presuntivo y justificado"/>
+  </section>
+  <section>
+    <title value="Diagnóstico definitivo"/>
+  </section>
+  <section>
+    <title value="Plan terapéutico"/>
+  </section>
+  <section>
+    <title value="Pronóstico"/>
+  </section>
+  <section>
+    <title value="Evolución"/>
+  </section>
+  <section>
+    <title value="Observaciones"/>
+  </section>
+  <section>
+    <title value="Anexos"/>
+  </section>
+</Composition>

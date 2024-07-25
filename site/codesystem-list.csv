@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs,0.1,active,,AnimalRace,AnimalRace,"Codes of the different Animal Races",
+http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs,0.1,active,,AnimalSpecie,AnimalSpecie,"Codes of the different Animal Species",
+http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs,0.1,active,,VetOrganizationCs,VetOrganizationCs,"Codes of the Organanization types including Veterinarian",

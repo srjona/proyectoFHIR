@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="VetOrganizationCs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem VetOrganizationCs</b></p><a name="VetOrganizationCs"> </a><a name="hcVetOrganizationCs"> </a><a name="hcVetOrganizationCs-en-US"> </a><p>This  code system <code>http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">VET<a name="VetOrganizationCs-VET"> </a></td><td>Veterinarian Healtcare Provider</td><td>An organization that provides healthcare services from pets.</td></tr></table></div>
+  </text>
+  <url value="http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs"/>
+  <version value="0.1"/>
+  <name value="VetOrganizationCs"/>
+  <title value="VetOrganizationCs"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-07-24T22:33:22-05:00"/>
+  <publisher value="HL7 Colombia - Official Affiliate of Health Level Seven International"/>
+  <contact>
+    <name value="HL7 Colombia - Official Affiliate of Health Level Seven International"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7co.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="nombre@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Carolina Rodriguez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="carolina.rodriguez@example.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Juan Pérez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="juan.perez@example.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes of the Organanization types including Veterinarian"/>
+  <jurisdiction>
+    <coding>
+      <display value="Colombia"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="This FHIR resource type CodeSystem has been created for educational purposes."/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="VET"/>
+    <display value="Veterinarian Healtcare Provider"/>
+    <definition value="An organization that provides healthcare services from pets."/>
+  </concept>
+</CodeSystem>

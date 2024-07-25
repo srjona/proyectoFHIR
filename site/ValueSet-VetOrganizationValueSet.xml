@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VetOrganizationValueSet"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VetOrganizationValueSet</b></p><a name="VetOrganizationValueSet"> </a><a name="hcVetOrganizationValueSet"> </a><a name="hcVetOrganizationValueSet-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-VetOrganizationCs.html"><code>http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs</code></a></li></ul></div>
+  </text>
+  <url value="http://team-a-hl7.org/fhir/ValueSet/VetOrganizationList"/>
+  <version value="0.1"/>
+  <name value="VetOrganizationValueSet"/>
+  <title value="Vet Organization Value Set"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-07-24T22:33:22-05:00"/>
+  <publisher value="HL7 Colombia - Official Affiliate of Health Level Seven International"/>
+  <contact>
+    <name value="HL7 Colombia - Official Affiliate of Health Level Seven International"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7co.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="nombre@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Carolina Rodriguez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="carolina.rodriguez@example.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Juan Pérez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="juan.perez@example.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes of the Organanization types including Veterinarian"/>
+  <jurisdiction>
+    <coding>
+      <display value="Colombia"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="This FHIR resource type CodeSystem has been created for educational purposes."/>
+  <compose>
+    <include>
+      <system value="http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs"/>
+    </include>
+  </compose>
+</ValueSet>

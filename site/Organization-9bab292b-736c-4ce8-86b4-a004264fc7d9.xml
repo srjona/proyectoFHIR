@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="9bab292b-736c-4ce8-86b4-a004264fc7d9"/>
+  <meta>
+    <profile value="https://team-a-hl7.org/fhir/StructureDefinition/VetOrganization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization 9bab292b-736c-4ce8-86b4-a004264fc7d9</b></p><a name="9bab292b-736c-4ce8-86b4-a004264fc7d9"> </a><a name="hc9bab292b-736c-4ce8-86b4-a004264fc7d9"> </a><a name="hc9bab292b-736c-4ce8-86b4-a004264fc7d9-en-US"> </a><p><b>identifier</b>: Tax ID number/960000000-0 (use: official, )</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs VET}">Veterinarian Healtcare Provider</span></p><p><b>name</b>: MI CONSULTORIO VETRINARIO</p><p><b>telecom</b>: <a href="tel:+57(600)919-2200">+57(600)919-2200</a></p><p><b>address</b>: Kra 7 No. 39-60(work)</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="TAX"/>
+        <display value="Tax ID number"/>
+      </coding>
+    </type>
+    <value value="960000000-0"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs"/>
+      <code value="VET"/>
+      <display value="Veterinarian Healtcare Provider"/>
+    </coding>
+  </type>
+  <name value="MI CONSULTORIO VETRINARIO"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+57(600)919-2200"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <text value="Kra 7 No. 39-60"/>
+    <city value="Bogotá D.C."/>
+    <district value="Chapinero"/>
+    <state value="Bogotá D.C."/>
+    <postalCode value="110000"/>
+    <country value="CO"/>
+  </address>
+</Organization>

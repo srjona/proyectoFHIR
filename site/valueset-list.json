@@ -1,0 +1,49 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://team-a-hl7.org/fhir/ValueSet/AnimalGenderStatus",
+      "version" : "0.1",
+      "status" : "active",
+      "name" : "AnimalGenderStatus",
+      "title" : "Animal GenderStatus Value Set",
+      "description" : "Codes of the Animal Gender Status",
+      "systems" : ["http://hl7.org/fhir/animal-genderstatus"]
+    },
+    {
+      "url" : "http://team-a-hl7.org/fhir/ValueSet/AnimalRaceList",
+      "version" : "0.1",
+      "status" : "active",
+      "name" : "AnimalRace",
+      "title" : "Animal Race Value Set",
+      "description" : "Codes of the Animal Race types",
+      "systems" : ["http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs"]
+    },
+    {
+      "url" : "http://team-a-hl7.org/fhir/ValueSet/AnimalSpecieList",
+      "version" : "0.1",
+      "status" : "active",
+      "name" : "AnimalSpecie",
+      "title" : "Animal Specie Value Set",
+      "description" : "Codes of the Animal Specie types",
+      "systems" : ["http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs"]
+    },
+    {
+      "url" : "http://team-a-hl7.org/fhir/ValueSet/PetPatientContactRoleList",
+      "version" : "0.1",
+      "status" : "active",
+      "name" : "PetPatientContactRole",
+      "title" : "Pet Patient Contact Role Value Set",
+      "description" : "Codes of the Pet Patient Contact Role List",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://team-a-hl7.org/fhir/ValueSet/VetOrganizationList",
+      "version" : "0.1",
+      "status" : "active",
+      "name" : "VetOrganizationValueSet",
+      "title" : "Vet Organization Value Set",
+      "description" : "Codes of the Organanization types including Veterinarian",
+      "systems" : ["http://team-a-hl7.org/fhir/CodeSystem/VetOrganizationCs"]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/fhir/CodeSystem/AnimalRace> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AnimalRace"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem AnimalRace</b></p><a name=\"AnimalRace\"> </a><a name=\"hcAnimalRace\"> </a><a name=\"hcAnimalRace-en-US\"> </a><p>This  code system <code>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">BIRD<a name=\"AnimalRace-BIRD\"> </a></td><td>Pajaro</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  CANARY<a name=\"AnimalRace-CANARY\"> </a></td><td>Canario</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  COCKATOO<a name=\"AnimalRace-COCKATOO\"> </a></td><td>Cacatua</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  CROWN<a name=\"AnimalRace-CROWN\"> </a></td><td>Cuervo</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">FELINE<a name=\"AnimalRace-FELINE\"> </a></td><td>Felino</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ANGORA<a name=\"AnimalRace-ANGORA\"> </a></td><td>Angora</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PERSIAN<a name=\"AnimalRace-PERSIAN\"> </a></td><td>Persa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  SIBERIAN<a name=\"AnimalRace-SIBERIAN\"> </a></td><td>Siberiano</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">CANINE<a name=\"AnimalRace-CANINE\"> </a></td><td>Canino</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PUG<a name=\"AnimalRace-PUG\"> </a></td><td>Pug</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  GERMANSHEPARD<a name=\"AnimalRace-GERMANSHEPARD\"> </a></td><td>Pastor Alemán</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PUDDLE<a name=\"AnimalRace-PUDDLE\"> </a></td><td>French Puddle</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1"] ; # 
+  fhir:name [ fhir:v "AnimalRace"] ; # 
+  fhir:title [ fhir:v "AnimalRace"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-24T22:33:22-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Colombia - Official Affiliate of Health Level Seven International"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Colombia - Official Affiliate of Health Level Seven International" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7co.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "nombre@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Carolina Rodriguez" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "carolina.rodriguez@example.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Juan Pérez" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "juan.perez@example.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes of the different Animal Races"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:display [ fhir:v "Colombia" ]
+     ] )
+  ] ) ; # 
+  fhir:purpose [ fhir:v "This FHIR resource type CodeSystem has been created for educational purposes."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "BIRD" ] ;
+     fhir:display [ fhir:v "Pajaro" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "CANARY" ] ;
+       fhir:display [ fhir:v "Canario" ]
+     ] [
+       fhir:code [ fhir:v "COCKATOO" ] ;
+       fhir:display [ fhir:v "Cacatua" ]
+     ] [
+       fhir:code [ fhir:v "CROWN" ] ;
+       fhir:display [ fhir:v "Cuervo" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "FELINE" ] ;
+     fhir:display [ fhir:v "Felino" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "ANGORA" ] ;
+       fhir:display [ fhir:v "Angora" ]
+     ] [
+       fhir:code [ fhir:v "PERSIAN" ] ;
+       fhir:display [ fhir:v "Persa" ]
+     ] [
+       fhir:code [ fhir:v "SIBERIAN" ] ;
+       fhir:display [ fhir:v "Siberiano" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "CANINE" ] ;
+     fhir:display [ fhir:v "Canino" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "PUG" ] ;
+       fhir:display [ fhir:v "Pug" ]
+     ] [
+       fhir:code [ fhir:v "GERMANSHEPARD" ] ;
+       fhir:display [ fhir:v "Pastor Alemán" ]
+     ] [
+       fhir:code [ fhir:v "PUDDLE" ] ;
+       fhir:display [ fhir:v "French Puddle" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

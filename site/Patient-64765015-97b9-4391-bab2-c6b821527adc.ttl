@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/fhir/Patient/64765015-97b9-4391-bab2-c6b821527adc> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "64765015-97b9-4391-bab2-c6b821527adc"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://team-a-hl7.org/fhir/StructureDefinition/PetPatient"^^xsd:anyURI ;
+       fhir:link <https://team-a-hl7.org/fhir/StructureDefinition/PetPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient 64765015-97b9-4391-bab2-c6b821527adc</b></p><a name=\"64765015-97b9-4391-bab2-c6b821527adc\"> </a><a name=\"hc64765015-97b9-4391-bab2-c6b821527adc\"> </a><a name=\"hc64765015-97b9-4391-bab2-c6b821527adc-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Michi Female, DoB: 2017-03-21 ( Medical record number: EHR-349827304)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Microchip Number/941091276493756</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Pet ownership (observable entity)\">Pet ownership (observable entity):</td><td colspan=\"3\"><ul><li>María Cristina Reyes López </li><li>Cll 140 # 7B-75(home)</li><li><a href=\"tel:+57(601)111-1111\">+57(601)111-1111</a></li><li><a href=\"tel:+57(300)222-2222\">+57(300)222-2222</a></li><li><a href=\"mailto:propietario@example.com\">propietario@example.com</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Please refer to: <a href=\"PetOwnerRelatedPerson/521a75f2-2781-417a-989e-abd462cc6624\">PetOwnerRelatedPerson/521a75f2-2781-417a-989e-abd462cc6624</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"null\"><a href=\"StructureDefinition-AnimalGenderStatus.html\"/></td><td colspan=\"3\"><span title=\"Codes:{http://hl7.org/fhir/animal-genderstatus neutered}\">Neutered</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"null\"><a href=\"StructureDefinition-AnimalRace.html\"/></td><td colspan=\"3\"><span title=\"Codes:{http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs ANGORA}\">Angora</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"null\"><a href=\"StructureDefinition-AnimalSpecie.html\"/></td><td colspan=\"3\"><span title=\"Codes:{http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs FELINE}\">Felino</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:id [ fhir:v "patient-species" ] ;
+     fhir:url [ fhir:v "http://team-a-hl7.org/fhir/StructureDefinition/AnimalSpecie"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FELINE" ] ;
+         fhir:display [ fhir:v "Felino" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "patient-race" ] ;
+     fhir:url [ fhir:v "http://team-a-hl7.org/fhir/StructureDefinition/AnimalRace"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ANGORA" ] ;
+         fhir:display [ fhir:v "Angora" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "patient-gender-status" ] ;
+     fhir:url [ fhir:v "http://team-a-hl7.org/fhir/StructureDefinition/AniamalGenderStatus"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/animal-genderstatus"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "neutered" ] ;
+         fhir:display [ fhir:v "Neutered" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical record number" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://MyVet.example.com/animal-ehr/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EHR-349827304" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MCN" ] ;
+         fhir:display [ fhir:v "Microchip Number" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://MyPet.example.com/animal-id/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "941091276493756" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Michi" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "2017-03-21"^^xsd:date] ; # 
+  fhir:contact ( [
+     fhir:relationship ( [
+       fhir:coding ( [
+         a sct:224150009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "224150009" ] ;
+         fhir:display [ fhir:v "Pet ownership (observable entity)" ]
+       ] )
+     ] ) ;
+     fhir:name [
+       fhir:family [ fhir:v "Reyes López" ] ;
+       fhir:given ( [ fhir:v "María" ] [ fhir:v "Cristina" ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+57(601)111-1111" ] ;
+       fhir:use [ fhir:v "home" ]
+     ] [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+57(300)222-2222" ] ;
+       fhir:use [ fhir:v "home" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "propietario@example.com" ]
+     ] ) ;
+     fhir:address [
+       fhir:use [ fhir:v "home" ] ;
+       fhir:text [ fhir:v "Cll 140 # 7B-75" ] ;
+       fhir:city [ fhir:v "Bogotá D.C" ] ;
+       fhir:state [ fhir:v "Bogotá D.C." ] ;
+       fhir:postalCode [ fhir:v "110121" ] ;
+       fhir:country [ fhir:v "CO" ]
+     ]
+  ] ) ; # 
+  fhir:link ( [
+     fhir:other [
+       fhir:link <https://example.org/fhir/PetOwnerRelatedPerson/521a75f2-2781-417a-989e-abd462cc6624> ;
+       fhir:reference [ fhir:v "PetOwnerRelatedPerson/521a75f2-2781-417a-989e-abd462cc6624" ]
+     ] ;
+     fhir:type [ fhir:v "refer" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

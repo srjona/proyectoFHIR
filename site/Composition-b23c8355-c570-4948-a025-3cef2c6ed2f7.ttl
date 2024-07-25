@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/fhir/Composition/b23c8355-c570-4948-a025-3cef2c6ed2f7> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "b23c8355-c570-4948-a025-3cef2c6ed2f7"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://team-a-hl7.org/fhir/StructureDefinition/VetComposition"^^xsd:anyURI ;
+       fhir:link <https://team-a-hl7.org/fhir/StructureDefinition/VetComposition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition b23c8355-c570-4948-a025-3cef2c6ed2f7</b></p><a name=\"b23c8355-c570-4948-a025-3cef2c6ed2f7\"> </a><a name=\"hcb23c8355-c570-4948-a025-3cef2c6ed2f7\"> </a><a name=\"hcb23c8355-c570-4948-a025-3cef2c6ed2f7-en-US\"> </a><p><b>identifier</b>: <code>http://myvet.example.com/document-identifier</code>/4dad935c-a7bd</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18842-5}\">Discharge summary</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 11503-0}\">Medical records</span></p><p><b>date</b>: 2023-03-28 09:23:45-0500</p><p><b>author</b>: <a href=\"VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52\">VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52</a></p><p><b>title</b>: HISTORIA CLÍNICA VETERINARIA</p><p><b>custodian</b>: <a href=\"VetOrganization/9bab292b-736c-4ce8-86b4-a004264fc7d9\">VetOrganization/9bab292b-736c-4ce8-86b4-a004264fc7d9</a></p></div>"
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "http://myvet.example.com/document-identifier"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "4dad935c-a7bd" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:18842-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "18842-5" ] ;
+       fhir:display [ fhir:v "Discharge summary" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:11503-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11503-0" ] ;
+       fhir:display [ fhir:v "Medical records" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://example.org/fhir/PetPatient/64765015-97b9-4391-bab2-c6b821527adc> ;
+     fhir:reference [ fhir:v "PetPatient/64765015-97b9-4391-bab2-c6b821527adc" ]
+  ] ; # 
+  fhir:date [ fhir:v "2023-03-28T09:23:45-05:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <https://example.org/fhir/VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52> ;
+     fhir:reference [ fhir:v "VetPractitioner/e8bc83dc-e0ff-41df-94f1-c00e4799cf52" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "HISTORIA CLÍNICA VETERINARIA"] ; # 
+  fhir:custodian [
+     fhir:link <https://example.org/fhir/VetOrganization/9bab292b-736c-4ce8-86b4-a004264fc7d9> ;
+     fhir:reference [ fhir:v "VetOrganization/9bab292b-736c-4ce8-86b4-a004264fc7d9" ]
+  ] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Anamnesis" ] ;
+     fhir:entry ( [
+       fhir:link <https://example.org/fhir/PetRelatedPerson/521a75f2-2781-417a-989e-abd462cc6624> ;
+       fhir:reference [ fhir:v "PetRelatedPerson/521a75f2-2781-417a-989e-abd462cc6624" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Examen físico general" ] ;
+     fhir:entry ( [
+       fhir:link <https://example.org/fhir/PetTypeCoat/238734586325> ;
+       fhir:reference [ fhir:v "PetTypeCoat/238734586325" ]
+     ] [
+       fhir:link <https://example.org/fhir/PetWeight/453452453> ;
+       fhir:reference [ fhir:v "PetWeight/453452453" ]
+     ] [
+       fhir:link <https://example.org/fhir/PetParticularSigns/R3453435> ;
+       fhir:reference [ fhir:v "PetParticularSigns/R3453435" ]
+     ] [
+       fhir:link <https://example.org/fhir/PetOrigin/FEGR45533> ;
+       fhir:reference [ fhir:v "PetOrigin/FEGR45533" ]
+     ] [
+       fhir:link <https://example.org/fhir/PetZootechnicalPurpose/2343324> ;
+       fhir:reference [ fhir:v "PetZootechnicalPurpose/2343324" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Abordaje diagnóstico" ]
+  ] [
+     fhir:title [ fhir:v "Exámenes complementarios y resultados" ]
+  ] [
+     fhir:title [ fhir:v "Diagnóstico presuntivo y justificado" ]
+  ] [
+     fhir:title [ fhir:v "Diagnóstico definitivo" ]
+  ] [
+     fhir:title [ fhir:v "Plan terapéutico" ]
+  ] [
+     fhir:title [ fhir:v "Pronóstico" ]
+  ] [
+     fhir:title [ fhir:v "Evolución" ]
+  ] [
+     fhir:title [ fhir:v "Observaciones" ]
+  ] [
+     fhir:title [ fhir:v "Anexos" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

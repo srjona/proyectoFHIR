@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="AnimalRace"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem AnimalRace</b></p><a name="AnimalRace"> </a><a name="hcAnimalRace"> </a><a name="hcAnimalRace-en-US"> </a><p>This  code system <code>http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs</code> defines the following codes in an undefined hierarchy:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style="white-space:nowrap">BIRD<a name="AnimalRace-BIRD"> </a></td><td>Pajaro</td></tr><tr><td>2</td><td style="white-space:nowrap">  CANARY<a name="AnimalRace-CANARY"> </a></td><td>Canario</td></tr><tr><td>2</td><td style="white-space:nowrap">  COCKATOO<a name="AnimalRace-COCKATOO"> </a></td><td>Cacatua</td></tr><tr><td>2</td><td style="white-space:nowrap">  CROWN<a name="AnimalRace-CROWN"> </a></td><td>Cuervo</td></tr><tr><td>1</td><td style="white-space:nowrap">FELINE<a name="AnimalRace-FELINE"> </a></td><td>Felino</td></tr><tr><td>2</td><td style="white-space:nowrap">  ANGORA<a name="AnimalRace-ANGORA"> </a></td><td>Angora</td></tr><tr><td>2</td><td style="white-space:nowrap">  PERSIAN<a name="AnimalRace-PERSIAN"> </a></td><td>Persa</td></tr><tr><td>2</td><td style="white-space:nowrap">  SIBERIAN<a name="AnimalRace-SIBERIAN"> </a></td><td>Siberiano</td></tr><tr><td>1</td><td style="white-space:nowrap">CANINE<a name="AnimalRace-CANINE"> </a></td><td>Canino</td></tr><tr><td>2</td><td style="white-space:nowrap">  PUG<a name="AnimalRace-PUG"> </a></td><td>Pug</td></tr><tr><td>2</td><td style="white-space:nowrap">  GERMANSHEPARD<a name="AnimalRace-GERMANSHEPARD"> </a></td><td>Pastor Alemán</td></tr><tr><td>2</td><td style="white-space:nowrap">  PUDDLE<a name="AnimalRace-PUDDLE"> </a></td><td>French Puddle</td></tr></table></div>
+  </text>
+  <url value="http://team-a-hl7.org/fhir/CodeSystem/AnimalRaceCs"/>
+  <version value="0.1"/>
+  <name value="AnimalRace"/>
+  <title value="AnimalRace"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-07-24T22:33:22-05:00"/>
+  <publisher value="HL7 Colombia - Official Affiliate of Health Level Seven International"/>
+  <contact>
+    <name value="HL7 Colombia - Official Affiliate of Health Level Seven International"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7co.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="nombre@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Carolina Rodriguez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="carolina.rodriguez@example.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Juan Pérez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="juan.perez@example.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes of the different Animal Races"/>
+  <jurisdiction>
+    <coding>
+      <display value="Colombia"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="This FHIR resource type CodeSystem has been created for educational purposes."/>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="BIRD"/>
+    <display value="Pajaro"/>
+    <concept>
+      <code value="CANARY"/>
+      <display value="Canario"/>
+    </concept>
+    <concept>
+      <code value="COCKATOO"/>
+      <display value="Cacatua"/>
+    </concept>
+    <concept>
+      <code value="CROWN"/>
+      <display value="Cuervo"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="FELINE"/>
+    <display value="Felino"/>
+    <concept>
+      <code value="ANGORA"/>
+      <display value="Angora"/>
+    </concept>
+    <concept>
+      <code value="PERSIAN"/>
+      <display value="Persa"/>
+    </concept>
+    <concept>
+      <code value="SIBERIAN"/>
+      <display value="Siberiano"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="CANINE"/>
+    <display value="Canino"/>
+    <concept>
+      <code value="PUG"/>
+      <display value="Pug"/>
+    </concept>
+    <concept>
+      <code value="GERMANSHEPARD"/>
+      <display value="Pastor Alemán"/>
+    </concept>
+    <concept>
+      <code value="PUDDLE"/>
+      <display value="French Puddle"/>
+    </concept>
+  </concept>
+</CodeSystem>

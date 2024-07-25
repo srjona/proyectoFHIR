@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="AnimalSpecie"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem AnimalSpecie</b></p><a name="AnimalSpecie"> </a><a name="hcAnimalSpecie"> </a><a name="hcAnimalSpecie-en-US"> </a><p>This  code system <code>http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">BIRD<a name="AnimalSpecie-BIRD"> </a></td><td>Pajaro</td></tr><tr><td style="white-space:nowrap">FELINE<a name="AnimalSpecie-FELINE"> </a></td><td>Felino</td></tr><tr><td style="white-space:nowrap">CANINE<a name="AnimalSpecie-CANINE"> </a></td><td>Canino</td></tr></table></div>
+  </text>
+  <url value="http://team-a-hl7.org/fhir/CodeSystem/AnimalSpecieCs"/>
+  <version value="0.1"/>
+  <name value="AnimalSpecie"/>
+  <title value="AnimalSpecie"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-07-24T22:33:22-05:00"/>
+  <publisher value="HL7 Colombia - Official Affiliate of Health Level Seven International"/>
+  <contact>
+    <name value="HL7 Colombia - Official Affiliate of Health Level Seven International"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7co.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="nombre@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Carolina Rodriguez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="carolina.rodriguez@example.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Juan Pérez"/>
+    <telecom>
+      <system value="email"/>
+      <value value="juan.perez@example.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes of the different Animal Species"/>
+  <jurisdiction>
+    <coding>
+      <display value="Colombia"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="This FHIR resource type CodeSystem has been created for educational purposes."/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="BIRD"/>
+    <display value="Pajaro"/>
+  </concept>
+  <concept>
+    <code value="FELINE"/>
+    <display value="Felino"/>
+  </concept>
+  <concept>
+    <code value="CANINE"/>
+    <display value="Canino"/>
+  </concept>
+</CodeSystem>

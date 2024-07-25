@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PetPatientContactRole",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PetPatientContactRole</b></p><a name=\"PetPatientContactRole\"> </a><a name=\"hcPetPatientContactRole\"> </a><a name=\"hcPetPatientContactRole-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/224150009\">224150009</a></td><td>Pet ownership (observable entity)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://team-a-hl7.org/fhir/ValueSet/PetPatientContactRoleList",
+  "version" : "0.1",
+  "name" : "PetPatientContactRole",
+  "title" : "Pet Patient Contact Role Value Set",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-07-24T22:33:22-05:00",
+  "publisher" : "HL7 Colombia - Official Affiliate of Health Level Seven International",
+  "contact" : [{
+    "name" : "HL7 Colombia - Official Affiliate of Health Level Seven International",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7co.org"
+    },
+    {
+      "system" : "email",
+      "value" : "nombre@example.com"
+    }]
+  },
+  {
+    "name" : "Carolina Rodriguez",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "carolina.rodriguez@example.org",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Juan Pérez",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "juan.perez@example.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes of the Pet Patient Contact Role List",
+  "jurisdiction" : [{
+    "coding" : [{
+      "display" : "Colombia"
+    }]
+  }],
+  "purpose" : "This FHIR resource type CodeSystem has been created for educational purposes.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "224150009",
+        "display" : "Pet ownership (observable entity)"
+      }]
+    }]
+  }
+}
