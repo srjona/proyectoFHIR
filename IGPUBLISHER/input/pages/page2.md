@@ -1,0 +1,3 @@
+# Objetivo
+
+Esperamos que con la implementación de este proyecto, podamos tener una mayor claridad y entendimiento de las guías de implementación construídas para el proyecto de Interoperabilidad de SURA. También, utilizaremos este nuevo conocimiento, para la evolución del proyecto e implementación futuras del mismo. Finalmente, creemos que con el esparcimiento de este conocimiento, logramos que dada una mayor divulgación, más interesados puedan utilizar el estandar para generar un único lenguaje de Salud.

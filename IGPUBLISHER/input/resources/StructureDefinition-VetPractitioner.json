@@ -1,0 +1,268 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "VetPractitioner",
+  "url": "https://team-a-hl7.org/fhir/StructureDefinition/VetPractitioner",
+  "name": "VetPractitioner",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.identifier.use",
+        "path": "Practitioner.identifier.use",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.identifier.type",
+        "path": "Practitioner.identifier.type",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.system",
+        "path": "Practitioner.identifier.type.coding.system",
+        "label": "Terminología",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203"
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.version",
+        "path": "Practitioner.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.code",
+        "path": "Practitioner.identifier.type.coding.code",
+        "min": 1,
+        "patternCode": "PN"
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.display",
+        "path": "Practitioner.identifier.type.coding.display",
+        "min": 1,
+        "fixedString": "Person Number"
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.userSelected",
+        "path": "Practitioner.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.identifier.type.text",
+        "path": "Practitioner.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.identifier.value",
+        "path": "Practitioner.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.identifier.period",
+        "path": "Practitioner.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.identifier.assigner",
+        "path": "Practitioner.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.name.use",
+        "path": "Practitioner.name.use",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name.text",
+        "path": "Practitioner.name.text",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name.family",
+        "path": "Practitioner.name.family",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name.given",
+        "path": "Practitioner.name.given",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.telecom.system",
+        "path": "Practitioner.telecom.system",
+        "min": 1,
+        "patternCode": "phone"
+      },
+      {
+        "id": "Practitioner.telecom.value",
+        "path": "Practitioner.telecom.value",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.address.use",
+        "path": "Practitioner.address.use",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address.type",
+        "path": "Practitioner.address.type",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.address.text",
+        "path": "Practitioner.address.text",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address.city",
+        "path": "Practitioner.address.city",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address.state",
+        "path": "Practitioner.address.state",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address.postalCode",
+        "path": "Practitioner.address.postalCode",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address.country",
+        "path": "Practitioner.address.country",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "id"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification:VetProffesional",
+        "path": "Practitioner.qualification",
+        "sliceName": "VetProffesional",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.qualification:VetProffesional.id",
+        "path": "Practitioner.qualification.id",
+        "min": 1,
+        "fixedString": "VetProffesional"
+      },
+      {
+        "id": "Practitioner.qualification:VetProffesional.identifier.type.coding",
+        "path": "Practitioner.qualification.identifier.type.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification:VetProffesional.identifier.type.coding:VetProffesionalLicenseNumber",
+        "path": "Practitioner.qualification.identifier.type.coding",
+        "sliceName": "VetProffesionalLicenseNumber",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.qualification:VetProffesional.identifier.type.coding:VetProffesionalLicenseNumber.system",
+        "path": "Practitioner.qualification.identifier.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203"
+      },
+      {
+        "id": "Practitioner.qualification:VetProffesional.identifier.type.coding:VetProffesionalLicenseNumber.code",
+        "path": "Practitioner.qualification.identifier.type.coding.code",
+        "min": 1,
+        "fixedCode": "LN"
+      },
+      {
+        "id": "Practitioner.qualification:VetProffesional.identifier.type.coding:VetProffesionalLicenseNumber.display",
+        "path": "Practitioner.qualification.identifier.type.coding.display",
+        "min": 1,
+        "fixedString": "License number"
+      },
+      {
+        "id": "Practitioner.qualification:VetProffesional.code",
+        "path": "Practitioner.qualification.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "106290006",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Practitioner.qualification:VetProffesional.period",
+        "path": "Practitioner.qualification.period",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification:VetProffesional.period.start",
+        "path": "Practitioner.qualification.period.start",
+        "min": 1
+      }
+    ]
+  }
+}

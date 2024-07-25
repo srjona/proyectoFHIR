@@ -1,0 +1,239 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "VetComposition",
+  "url": "https://team-a-hl7.org/fhir/StructureDefinition/VetComposition",
+  "name": "VetComposition",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Composition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.identifier",
+        "path": "Composition.identifier",
+        "min": 1
+      },
+      {
+        "id": "Composition.identifier.use",
+        "path": "Composition.identifier.use",
+        "max": "0"
+      },
+      {
+        "id": "Composition.identifier.type",
+        "path": "Composition.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.identifier.system",
+        "path": "Composition.identifier.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.identifier.value",
+        "path": "Composition.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Composition.identifier.period",
+        "path": "Composition.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Composition.identifier.assigner",
+        "path": "Composition.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.category.coding",
+        "path": "Composition.category.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.category.coding.system",
+        "path": "Composition.category.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.category.coding.code",
+        "path": "Composition.category.coding.code",
+        "fixedCode": "11503-0"
+      },
+      {
+        "id": "Composition.category.coding.display",
+        "path": "Composition.category.coding.display",
+        "fixedString": "Medical records"
+      },
+      {
+        "id": "Composition.category.text",
+        "path": "Composition.category.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://team-a-hl7.org/fhir/StructureDefinition/PetPatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.subject.reference",
+        "path": "Composition.subject.reference",
+        "min": 1
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://team-a-hl7.org/fhir/StructureDefinition/VetPractitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.author.reference",
+        "path": "Composition.author.reference",
+        "min": 1
+      },
+      {
+        "id": "Composition.attester",
+        "path": "Composition.attester",
+        "max": "1"
+      },
+      {
+        "id": "Composition.attester.party",
+        "path": "Composition.attester.party",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://team-a-hl7.org/fhir/StructureDefinition/VetPractitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.custodian",
+        "path": "Composition.custodian",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://team-a-hl7.org/fhir/StructureDefinition/VetOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.custodian.reference",
+        "path": "Composition.custodian.reference",
+        "min": 1
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "id"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Composition.section:RelatedOwnerSection",
+        "path": "Composition.section",
+        "sliceName": "RelatedOwnerSection",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:RelatedOwnerSection.title",
+        "path": "Composition.section.title",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:RelatedOwnerSection.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://team-a-hl7.org/fhir/StructureDefinition/PetOwnerRelatedPersonProfile"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:RelatedOwnerSection.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:PetObservations",
+        "path": "Composition.section",
+        "sliceName": "PetObservations",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:PetObservations.title",
+        "path": "Composition.section.title",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:PetObservations.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://team-a-hl7.org/fhir/StructureDefinition/PetWeight",
+              "https://team-a-hl7.org/fhir/StructureDefinition/PetTypeCoat",
+              "https://team-a-hl7.org/fhir/StructureDefinition/PetParticularSigns",
+              "https://team-a-hl7.org/fhir/StructureDefinition/PetZootechnicalPurpose",
+              "https://team-a-hl7.org/fhir/StructureDefinition/PetOrigin"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

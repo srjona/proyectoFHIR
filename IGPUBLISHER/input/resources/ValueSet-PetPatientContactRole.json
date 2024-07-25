@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PetPatientContactRole",
+  "id": "PetPatientContactRole",
+  "title": "Pet Patient Contact Role Value Set",
+  "description": "Codes of the Pet Patient Contact Role List",
+  "url": "http://team-a-hl7.org/fhir/ValueSet/PetPatientContactRoleList",
+  "version": "4.0.1",
+  "experimental": true,
+  "purpose": "This FHIR resource type CodeSystem has been created for educational purposes.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "224150009",
+            "display": "Pet ownership (observable entity)"
+          }
+        ]
+      }
+    ]
+  }
+}
